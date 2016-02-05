@@ -14,5 +14,5 @@ for line in text:
             ks = [k, ]
         for k in ks:
             word_freq[k] = word_freq.get(k, 0) + 1
-for word in sorted(word_freq, key=lambda k: word_freq[k], reverse=True)[:10]:
+for word in sorted(word_freq, key=lambda k: word_freq[k], reverse=True)[:20]:
     print(word, "\t", word_freq[word])
